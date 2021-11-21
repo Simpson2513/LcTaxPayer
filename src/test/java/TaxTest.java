@@ -55,6 +55,17 @@ public class TaxTest {
     }
 
     @Test
+    public void test15Zero() {
+        Tax tax = new Tax();
+
+        double expected = 15;
+        double actual = tax.tax15(200, 100);
+
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+    @Test
     public void increaseIncome() {
         Tax tax = new Tax();
         tax.increaseIncome(100);
